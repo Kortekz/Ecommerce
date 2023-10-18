@@ -69,6 +69,7 @@ img{
   /* Product Page Css */
   .h1product{
     text-align: center;
+    padding: 20px;
   }
   .Pproduct{
     text-align: center;
@@ -78,7 +79,7 @@ img{
   .container{
     padding-left: 40px;
     padding-right: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -134,13 +135,18 @@ section{
 
 button{
   align-items: center;
+  color: rgb(63, 63, 63);
+  background-color: transparent;
+  border: 2px solid rgb(63, 63, 63) ;
+  padding: 20px;
+
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+button:hover{
   color: white;
   background-color: rgb(63, 63, 63);
-  padding: 20px;
-  margin: auto;
-  border-radius: 5px;
-  font-weight: 100;
-  
 }
 
   /* Index.Html css */
