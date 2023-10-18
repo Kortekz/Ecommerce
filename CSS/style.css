@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed;
+    
+}
+
+/* This navbar is for all pages */
+nav{
+    background-color: rgb(63, 63, 63);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+nav ul li {
+  position: relative; /* Set position relative for the list items */
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust the position to align with the text */
+  left: 50%; /* Align at the center */
+  transform: translateX(-48%); /* Adjust to center the line under the text */
+  width: 0; /* Initial width is 0 */
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s; /* Add a transition effect */
+}
+
+nav ul li a:hover::after {
+  width: 62%; /* Set the desired width for the line on hover */
+}
+
+
+
+
+body{
+    padding-top: 50px;
+}
+
+img{
+    width: 400px;
+    height: 260px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* add padding for better appearance */
+  }
+  
+  /* Product Page Css */
+  .h1product{
+    text-align: center;
+  }
+  .Pproduct{
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .container{
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "firstHeading SecondHeading ThirdHeading"
+    "data1        data2         data3"
+    "data4        data5         data6"
+    "data7        data8         data9"
+    ;
+  }
+  .sec1{
+    grid-area: firstHeading;
+   }
+ 
+   .sec2{
+     grid-area: SecondHeading;
+   } 
+   
+   .sec3{
+     grid-area: ThirdHeading;
+   } 
+   
+   .sec4{
+     grid-area: data1;
+   } 
+   
+   .sec5{
+     grid-area: data2;
+   }
+ 
+   .sec6{
+     grid-area: data3;
+   }
+ 
+
+.banner{
+  width: 100%;
+  height: 100%;
+}
+
+section{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid rgb(63, 63, 63);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px; /* Add spacing between products */
+  margin-right: 20px; /* Add spacing to the right of each product */
+  width: calc(95% - 20px); /* Calculate width for each product including margins */
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+
+button{
+  align-items: center;
+  color: white;
+  background-color: rgb(63, 63, 63);
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+  font-weight: 100;
+  
+}
+
+  /* Index.Html css */
+  .welcome-section{
+    text-align: center;
+    padding: 20px;
+
+  }
+  .featured-products {
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "Home1 Home2 Home3"
+    ;
+  }
+  .home1{
+    grid-area: Home1;
+  }
+  .home2{
+    grid-area: Home2;
+  }
+  .home3{
+    grid-area: Home3;
+  }
+
+  .Phome{
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .FP{
+    text-align: center;
+    font-size: 25px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+  
+
+  .welcome-section{
+    align-items: center;
+  }
+
+  /* Footer for all pages */
+  footer{
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    
+    
+  }
+
+
+
+/* Navbar animation */
+  @keyframes colorChanger {
+
+    from{
+      background-color: rgb(63, 63, 63);
+    }
+    to{
+      background-color: rgb(205, 119, 0);
+    }
+  }
+
+  @keyframes Movement {
+    0% {
+      background-color: rgb(63, 63, 63);
+      
+    }
+    25% {
+      background-color: rgb(205, 119, 0);
+      
+    }
+    50% {
+      background-color: rgb(228, 0, 0);
+      
+    }
+    75% {
+      background-color: rgb(70, 0, 98);
+      
+    }
+    100% {
+      background-color: rgb(63, 63, 63);
+     
+    }
+    
+  }
+
+nav{
+    background-color:rgb(63, 63, 63);
+    animation-name: Movement;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    position: fixed;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  /* Styles for Contact and Checkout Page */
+  /* Contact Page Css */
+  .Contact{
+    padding-top: 90px;
+  }
+  
+  /* .checkoutBod{
+    padding-bottom: 20px;
+  } */
+  
+  .Con{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+.Conp{
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 18px;
+
+}
+
+/* Form for checkout and About Pages */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: left;
+    margin-bottom: 50px;
+    
+}
+/* Style labels for form fields */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+input[type="name"],
+input[type="Surname"],
+input[type="Contact"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 4px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* About Page */
+.Abouty{
+  padding-top: 100px;
+}
+
+.about{
+text-align: center;
+padding: 30px;
+font-size: 30px;
+}
+.Pabout {
+  text-align: center;
+  margin: 0 80px; /* Adjust the margin to add spacing on the left and right */
+  font-size: 18px;
+}
+
+.secAbout{
+  padding-left: 75px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "About1 About2 About3"
+}
+.secAbout img{
+  width: 420px;
+  height: 450px;
+}
+.secty1{
+  grid-area: About1;
+}
+.secty2{
+  grid-area: About2;
+}
+.secty3{
+  grid-area: About3;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
