@@ -439,7 +439,7 @@ font-size: 30px;
 /* Styles for screens between 721px and 1080px wide */
 @media screen and (min-width: 721px) and (max-width: 1080px) {
   body {
-    background-color: lightyellow;
+    background-color: rgb(249, 249, 138);
     font-size: 20px;
   }
 }
@@ -447,7 +447,7 @@ font-size: 30px;
 /* Styles for screens wider than 1080px */
 @media screen and (min-width: 1081px) {
   body {
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
     font-size: 22px;
   }
 }
