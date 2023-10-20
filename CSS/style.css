@@ -420,19 +420,35 @@ font-size: 30px;
 
 
 /* Common styles for all screen sizes */
+/* Styles for screens up to 300px wide */
 @media screen and (max-width: 300px) {
-  /* Styles for screens up to 300px wide */
-
+  body {
+    background-color: lightblue;
+    font-size: 16px;
+  }
 }
 
+/* Styles for screens between 301px and 720px wide */
 @media screen and (min-width: 301px) and (max-width: 720px) {
-  /* Styles for screens between 301px and 720px wide */
+  body {
+    background-color: lightgreen;
+    font-size: 18px;
+  }
 }
 
+/* Styles for screens between 721px and 1080px wide */
 @media screen and (min-width: 721px) and (max-width: 1080px) {
-  /* Styles for screens between 721px and 1080px wide */
+  body {
+    background-color: lightyellow;
+    font-size: 20px;
+  }
 }
 
+/* Styles for screens wider than 1080px */
 @media screen and (min-width: 1081px) {
-  /* Styles for screens wider than 1080px */
+  body {
+    background-color: lightgray;
+    font-size: 22px;
+  }
 }
+
