@@ -418,8 +418,21 @@ font-size: 30px;
   grid-area: About3;
 }
 
-@media screen and (max-width:700px) {
-    body {
-        background-color: rgb(255, 255, 255);
-    }
+
+/* Common styles for all screen sizes */
+@media screen and (max-width: 300px) {
+  /* Styles for screens up to 300px wide */
+
+}
+
+@media screen and (min-width: 301px) and (max-width: 720px) {
+  /* Styles for screens between 301px and 720px wide */
+}
+
+@media screen and (min-width: 721px) and (max-width: 1080px) {
+  /* Styles for screens between 721px and 1080px wide */
+}
+
+@media screen and (min-width: 1081px) {
+  /* Styles for screens wider than 1080px */
 }
