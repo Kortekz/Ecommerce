@@ -86,8 +86,6 @@ img{
     grid-template-areas: 
     "firstHeading SecondHeading ThirdHeading"
     "data1        data2         data3"
-    "data4        data5         data6"
-    "data7        data8         data9"
     ;
   }
   .sec1{
@@ -139,10 +137,10 @@ button{
   background-color: transparent;
   border: 2px solid rgb(63, 63, 63) ;
   padding: 20px;
-
   border-radius: 5px;
   font-size: 17px;
   font-weight: bold;
+  transition: background-color 0.5s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 button:hover{
   color: white;
@@ -270,12 +268,72 @@ nav{
     padding-bottom: 40px;
     font-size: 30px;
   }
+  .Cont{
+    padding-left: 20px;
+    padding-bottom: 40px;
+    font-size: 25px;
+
+  }
 .Conp{
   text-align: center;
   padding-bottom: 30px;
   font-size: 18px;
 
 }
+.butCheck{
+  color: rgb(255, 255, 255);
+  background-color: rgb(16, 104, 0);
+  border: 2px solid rgb(16, 104, 0) ;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  transition: background-color 0.5s cubic-bezier(0.25, 1, 0.5, 1), color 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text horizontally within the button */
+  position: relative;
+  top: 70px; /* Center vertically */
+  transform: translateY(-50%);
+  margin-bottom: 80px; /* Add 20px of spacing after the button */
+}
+.butCheck:hover{
+  color: white;
+  background-color: rgb(41, 179, 17);
+  border: 2px solid rgb(41, 179, 17);
+}
+
+/* Css FOr table on Checkout Page */
+.tableCheck {
+  border-collapse: collapse; /* Collapse the borders */
+  width: 98%;
+  padding: 50px;
+  margin: 0 auto; /* Center the table horizontally */
+
+}
+
+.tableCheck th, .tableCheck td {
+  border: 1px solid rgb(63, 63, 63); /* Add a border to each cell */
+  padding: 20px; /* Add padding to space the content within cells */
+  text-align: center; /* Center the text in cells */
+}
+
+/* Style the header row */
+.tableCheck th {
+  background-color: rgb(63, 63, 63);
+  color: white;
+}
+
+/* Style the odd rows */
+.tableCheck tr:nth-child(odd) {
+  background-color: rgb(228, 228, 228);
+}
+
+.imgTab{
+  width: 250px;
+  height: 150px;
+}
+
 
 /* Form for checkout and About Pages */
 form {
