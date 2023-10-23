@@ -1,10 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto Condensed;
-    
+  margin: 0;
+  padding: 0;
+  font-family: Roboto Condensed;
+  
 }
 
+
+body{
+    padding-top: 50px;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
 /* This navbar is for all pages */
 nav{
     background-color: rgb(63, 63, 63);
@@ -40,12 +47,6 @@ nav ul li a:hover::after {
   width: 62%; /* Set the desired width for the line on hover */
 }
 
-
-
-
-body{
-    padding-top: 50px;
-}
 
 img{
     width: 400px;
@@ -425,6 +426,7 @@ font-size: 30px;
   body {
     background-color: lightblue;
     font-size: 16px;
+    margin: auto;
   }
 }
 
@@ -433,6 +435,7 @@ font-size: 30px;
   body {
     background-color: lightgreen;
     font-size: 18px;
+    margin: auto;
   }
 }
 
@@ -441,6 +444,7 @@ font-size: 30px;
   body {
     background-color: rgb(249, 249, 138);
     font-size: 20px;
+    margin: auto;
   }
 }
 
@@ -449,6 +453,7 @@ font-size: 30px;
   body {
     background-color: rgb(255, 255, 255);
     font-size: 22px;
+    margin: auto;
   }
 }
 
